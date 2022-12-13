@@ -1,0 +1,14 @@
+C:\Users\gorke\Desktop\NumeralSystems-master\bin\Debug\netcoreapp3.1\Project 01 NumeralSystems.exe
+C:\Users\gorke\Desktop\NumeralSystems-master\bin\Debug\netcoreapp3.1\Project 01 NumeralSystems.deps.json
+C:\Users\gorke\Desktop\NumeralSystems-master\bin\Debug\netcoreapp3.1\Project 01 NumeralSystems.runtimeconfig.json
+C:\Users\gorke\Desktop\NumeralSystems-master\bin\Debug\netcoreapp3.1\Project 01 NumeralSystems.runtimeconfig.dev.json
+C:\Users\gorke\Desktop\NumeralSystems-master\bin\Debug\netcoreapp3.1\Project 01 NumeralSystems.dll
+C:\Users\gorke\Desktop\NumeralSystems-master\bin\Debug\netcoreapp3.1\Project 01 NumeralSystems.pdb
+C:\Users\gorke\Desktop\NumeralSystems-master\obj\Debug\netcoreapp3.1\Project 01 NumeralSystems.csproj.AssemblyReference.cache
+C:\Users\gorke\Desktop\NumeralSystems-master\obj\Debug\netcoreapp3.1\Project 01 NumeralSystems.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gorke\Desktop\NumeralSystems-master\obj\Debug\netcoreapp3.1\Project 01 NumeralSystems.AssemblyInfoInputs.cache
+C:\Users\gorke\Desktop\NumeralSystems-master\obj\Debug\netcoreapp3.1\Project 01 NumeralSystems.AssemblyInfo.cs
+C:\Users\gorke\Desktop\NumeralSystems-master\obj\Debug\netcoreapp3.1\Project 01 NumeralSystems.csproj.CoreCompileInputs.cache
+C:\Users\gorke\Desktop\NumeralSystems-master\obj\Debug\netcoreapp3.1\Project 01 NumeralSystems.dll
+C:\Users\gorke\Desktop\NumeralSystems-master\obj\Debug\netcoreapp3.1\Project 01 NumeralSystems.pdb
+C:\Users\gorke\Desktop\NumeralSystems-master\obj\Debug\netcoreapp3.1\Project 01 NumeralSystems.genruntimeconfig.cache
