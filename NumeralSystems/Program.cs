@@ -5,6 +5,83 @@ namespace Project_01_NumeralSystems
 {
     class Program
     {
+        public static string Reverse(ref string s)
+        {
+            char[] charArray = s.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+        }
+        public static string Convert_toDecimal(string getinput, int b)
+        {
+            string answer = "", fraction = "";
+            int whole, remain;
+            var char_abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToArray();
+            bool addFraction = false;
+
+            if (getinput.Contains(","))
+            {
+                addFraction = true;
+                fraction = "0" + getinput.Substring(getinput.IndexOf(','));
+                getinput = getinput.Remove(getinput.IndexOf(','));
+                if (!fraction.Substring(2).All(char.IsDigit))
+                {
+                    throw new Exception("Invalid number !! Please try again ");
+                }
+            }
+
+            if (!getinput.All(char.IsDigit))
+            {
+                throw new Exception("Invalid number !! Please try again ");
+            }
+
+            whole = int.Parse(getinput);
+            while (whole != 0)
+            {
+                remain = whole % b;
+                whole /= b;
+                if (remain > 9)
+                {
+                    answer += char_abc[remain - 10];
+                }
+                else
+                {
+                    answer += remain;
+                }
+            }
+
+            answer = Reverse(ref answer);
+            if (addFraction)
+            {
+                answer += "," + ConvertDecimalFraction(double.Parse(fraction), b);
+            }
+
+            return answer;
+        }
+        public static string ConvertDecimalFraction(double getinput, int b)
+        {
+            string answer = "";
+            var char_abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToArray();
+
+            while (!(getinput == 0))
+            {
+                getinput *= b;
+                if (getinput >= 10)
+                {
+                    answer += char_abc[Convert.ToInt32(getinput) - 10].ToString();
+                }
+                else
+                {
+                    answer += Math.Floor(getinput).ToString();
+                }
+                if (getinput > 0)
+                {
+                    getinput %= 1;
+                }
+            }
+
+            return answer;
+
+        }
         public static string ToDecimal(string getinput, int b) 
         {
             string fraction = "";
@@ -70,85 +147,7 @@ namespace Project_01_NumeralSystems
             }
         }
 
-        public static string Convert_toDecimal(string getinput, int b) 
-        {
-            string answer = "", fraction = "";
-            int whole, remain;
-            var char_abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToArray();
-            bool addFraction = false;
-
-            if(getinput.Contains(","))
-            {
-                addFraction = true;
-                fraction = "0" + getinput.Substring(getinput.IndexOf(','));
-                getinput = getinput.Remove(getinput.IndexOf(','));
-                if (!fraction.Substring(2).All(char.IsDigit))
-                {
-                    throw new Exception("Invalid number !! Please try again ");
-                }
-            }
-
-            if (!getinput.All(char.IsDigit))
-            {
-                throw new Exception("Invalid number !! Please try again ");
-            }
-
-            whole = int.Parse(getinput);
-            while (whole != 0)
-            {
-                remain = whole % b;
-                whole /= b;
-                if (remain > 9)
-                {
-                    answer += char_abc[remain - 10];
-                }
-                else 
-                {
-                    answer += remain; 
-                }
-            }
-
-            answer = Reverse(ref answer);
-            if (addFraction)
-            {
-                answer += "," + ConvertDecimalFraction(double.Parse(fraction), b);
-            }
-
-            return answer;
-        }
-
-        public static string ConvertDecimalFraction(double getinput, int b) 
-        {
-            string answer = "";
-            var char_abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToArray();
-
-            while (!(getinput == 0))
-            {
-                getinput *= b;
-                if (getinput >= 10)
-                {
-                    answer += char_abc[Convert.ToInt32(getinput)-10].ToString();
-                }
-                else
-                {
-                    answer += Math.Floor(getinput).ToString();
-                }
-                if(getinput > 0)
-                {
-                    getinput %= 1;
-                }
-            }
-
-            return answer;
-
-        }
-
-        public static string Reverse(ref string s)
-        {
-            char[] charArray = s.ToCharArray();
-            Array.Reverse(charArray);
-            return new string(charArray);
-        }
+      
 
         static void Main(string[] args)
         {

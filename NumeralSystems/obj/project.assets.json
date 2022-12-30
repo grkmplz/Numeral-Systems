@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gorke\\Desktop\\NumeralSystems-master\\Project 01 NumeralSystems.csproj",
+      "projectUniqueName": "C:\\Users\\gorke\\Desktop\\Computational_Methods\\NumeralSystems\\Project 01 NumeralSystems.csproj",
       "projectName": "Project 01 NumeralSystems",
-      "projectPath": "C:\\Users\\gorke\\Desktop\\NumeralSystems-master\\Project 01 NumeralSystems.csproj",
+      "projectPath": "C:\\Users\\gorke\\Desktop\\Computational_Methods\\NumeralSystems\\Project 01 NumeralSystems.csproj",
       "packagesPath": "C:\\Users\\gorke\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gorke\\Desktop\\NumeralSystems-master\\obj\\",
+      "outputPath": "C:\\Users\\gorke\\Desktop\\Computational_Methods\\NumeralSystems\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gorke\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
